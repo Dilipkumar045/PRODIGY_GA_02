@@ -1,0 +1,30 @@
+import torch
+from diffusers import StableDiffusionPipeline
+from PIL import Image
+
+# Load the Stable Diffusion model
+model_id = "runwayml/stable-diffusion-v1-5"
+
+pipe = StableDiffusionPipeline.from_pretrained(
+    model_id,
+    torch_dtype=torch.float16
+)
+
+# Move model to GPU if available
+device = "cuda" if torch.cuda.is_available() else "cpu"
+pipe = pipe.to(device)
+
+# Text prompt
+prompt = "A futuristic city with flying cars at sunset, ultra realistic"
+
+# Generate image
+image = pipe(
+    prompt,
+    guidance_scale=7.5,
+    num_inference_steps=50
+).images[0]
+
+# Save image
+image.save("generated_image.png")
+
+print("Image generated and saved successfully.")
