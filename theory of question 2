@@ -1,0 +1,258 @@
+1. Introduction
+
+Text-to-image generation is an important application of Generative Artificial Intelligence, where a model creates realistic or artistic images based on a natural language text prompt. This task combines Natural Language Processing (NLP) and Computer Vision (CV), enabling machines to understand human language and translate it into visual content.
+
+Pre-trained generative models such as DALL·E-mini and Stable Diffusion have significantly advanced this field by producing high-quality images without requiring users to train models from scratch. These models are trained on large-scale datasets containing paired text descriptions and images, allowing them to learn semantic relationships between words and visual features.
+
+2. What is Text-to-Image Generation?
+
+Text-to-image generation refers to the process of:
+
+Taking a text prompt as input
+
+Interpreting its semantic meaning
+
+Generating a corresponding image that visually represents the description
+
+Example:
+
+Text Prompt:
+“A futuristic city with flying cars at sunset”
+
+Generated Output:
+An image depicting skyscrapers, advanced technology, and a sunset background.
+
+This capability is widely used in design, entertainment, education, marketing, and research.
+
+3. Pre-trained Generative Models
+3.1 What Are Pre-trained Models?
+
+Pre-trained models are machine learning models that have already been trained on large datasets and can be reused for new tasks without training from scratch. In text-to-image generation, pre-trained models learn:
+
+Language understanding
+
+Visual representation
+
+Cross-modal alignment between text and images
+
+Using pre-trained models:
+
+Saves time and computational resources
+
+Requires minimal technical expertise
+
+Produces high-quality results quickly
+
+4. DALL·E-mini (Craiyon)
+4.1 Overview
+
+DALL·E-mini, also known as Craiyon, is an open-source text-to-image generation model inspired by OpenAI’s DALL·E. It generates images based on textual descriptions provided by users.
+
+Key Features:
+
+Lightweight compared to large diffusion models
+
+Generates multiple image samples per prompt
+
+Accessible via web interfaces
+
+Suitable for educational and experimental use
+
+4.2 Working Principle of DALL·E-mini
+
+DALL·E-mini is based on a transformer architecture, similar to language models like GPT.
+
+Steps:
+
+The text prompt is tokenized and encoded.
+
+The model maps text tokens to visual representations.
+
+Images are generated pixel-by-pixel using learned patterns.
+
+Multiple candidate images are produced.
+
+The model learns to associate words such as objects, colors, styles, and environments with corresponding visual features.
+
+4.3 Advantages and Limitations of DALL·E-mini
+
+Advantages:
+
+Easy to use
+
+Requires less computational power
+
+Useful for quick prototyping and learning
+
+Limitations:
+
+Lower image resolution
+
+Less detail and realism
+
+Limited control over fine visual elements
+
+5. Stable Diffusion
+5.1 Overview
+
+Stable Diffusion is a state-of-the-art latent diffusion model designed for high-quality text-to-image generation. Unlike earlier pixel-based models, it operates in a compressed latent space, making it computationally efficient while producing highly detailed images.
+
+Stable Diffusion is widely used in:
+
+Professional art creation
+
+Game design
+
+Film concept art
+
+Advertising and branding
+
+5.2 Diffusion Models – Concept
+
+Diffusion models work by:
+
+Gradually adding noise to images during training
+
+Learning how to reverse this process
+
+Reconstructing images from random noise guided by text prompts
+
+This process allows the model to generate diverse and realistic images.
+
+5.3 Architecture of Stable Diffusion
+
+Stable Diffusion consists of three main components:
+
+Text Encoder
+
+Converts text prompts into embeddings
+
+Usually based on CLIP (Contrastive Language–Image Pretraining)
+
+Latent Diffusion Model
+
+Generates images in a compressed latent space
+
+Iteratively removes noise to form an image
+
+Decoder (VAE – Variational Autoencoder)
+
+Converts latent representations into full-resolution images
+
+5.4 Image Generation Process
+
+The image generation process in Stable Diffusion includes:
+
+Encoding the text prompt
+
+Initializing random noise
+
+Gradually denoising the latent representation
+
+Aligning image features with text semantics
+
+Decoding the final image
+
+This iterative process produces high-quality, contextually accurate images.
+
+6. Text Prompts and Prompt Engineering
+6.1 Importance of Text Prompts
+
+The quality of generated images heavily depends on the clarity and specificity of the text prompt.
+
+Good prompts include:
+
+Objects
+
+Environment
+
+Style
+
+Lighting
+
+Perspective
+
+Example:
+
+“A realistic oil painting of a tiger in a jungle at sunrise, ultra-detailed”
+
+6.2 Prompt Engineering
+
+Prompt engineering is the practice of designing prompts to achieve better outputs. It involves:
+
+Adding descriptive adjectives
+
+Specifying art styles
+
+Including camera angles or realism levels
+
+Effective prompt engineering improves image accuracy and aesthetics.
+
+7. Evaluation of Generated Images
+Automatic Evaluation:
+
+Image diversity
+
+Resolution and sharpness
+
+Semantic alignment with text
+
+Human Evaluation:
+
+Visual realism
+
+Artistic quality
+
+Relevance to prompt
+
+Creativity
+
+Human judgment is often preferred due to the subjective nature of images.
+
+8. Applications of Text-to-Image Generation
+
+Digital art and illustration
+
+Marketing and advertising
+
+Game and film concept design
+
+Education and visualization
+
+Fashion and product design
+
+Architectural visualization
+
+9. Advantages of Using Pre-trained Models
+
+No need for training from scratch
+
+Cost-effective
+
+Fast image generation
+
+Accessible to non-experts
+
+High-quality creative outputs
+
+10. Limitations and Challenges
+
+Bias inherited from training data
+
+Limited control over exact outputs
+
+Ethical concerns (copyright, misuse)
+
+High computational requirements (for large models)
+
+11. Ethical Considerations
+
+Responsible use of text-to-image models requires:
+
+Avoiding harmful or biased prompts
+
+Respecting copyright and intellectual property
+
+Preventing misuse such as deepfakes
+
+Transparency about AI-generated images
